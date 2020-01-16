@@ -1,0 +1,29 @@
+import React, { useState } from "react";
+import ReactMapGl from "react-map-gl";
+
+const MapBox = ({ koordinate }) => {
+  // const token = process.env.REACT_APP_MAPBOX_TOKEN;
+  // const token = process.env.MAP_TOKEN;
+  const token =
+    "pk.eyJ1IjoidGhlbWlza28iLCJhIjoiY2sxaHh5aTM5MDBwazNkbW5zcGZ2emJ1aCJ9.IxF9Bk89byq_yOvqK6sBDA";
+  const [viewport, setViewport] = useState({
+    latitude: 43.3320868,
+    longitude: 21.9343209,
+    width: "40vw",
+    height: "55vh",
+    zoom: 10
+  });
+
+  return (
+    <ReactMapGl
+      {...viewport}
+      mapboxApiAccessToken={token}
+      onViewportChange={viewport => {
+        setViewport(viewport);
+      }}
+      mapStyle="mapbox://styles/themisko/ck1hymggs1jl81cnpktd04685"
+    ></ReactMapGl>
+  );
+};
+
+export default MapBox;
