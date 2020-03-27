@@ -10,13 +10,9 @@ const Footer = () => {
   return (
     <div className="footer-container">
       <div className="footer-item1">
-        <p>
-          etraset sheets containing Lorem Ipsum passages, and more recently with
-          desktop publishing.
-        </p>
         <h1>45</h1>
         <div className="footer-line"></div>
-        <h5>45 Degrees Architecture @ 2019</h5>
+        <h5>45 Degrees Architecture @ 2020</h5>
       </div>
       <div className="footer-item">
         <div className="footer-icon">

@@ -11,13 +11,13 @@ const HomeProjects = () => {
     <div className="home-projects-container">
       <div className="home-project">
         <img src={url1} />
-        <h4>Palace Fashion Mall</h4>
-        <h5>Public</h5>
+        <h4>Beach House</h4>
+        <h5>private</h5>
       </div>
       <div className="home-project">
         <img src={url2} />
-        <h4>Palace Fashion Mall</h4>
-        <h5>Public</h5>
+        <h4>Winter Cabin</h4>
+        <h5>Private</h5>
       </div>
       <div className="home-project">
         <img src={url3} />

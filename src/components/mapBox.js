@@ -9,8 +9,8 @@ const MapBox = ({ koordinate }) => {
   const [viewport, setViewport] = useState({
     latitude: 43.3320868,
     longitude: 21.9343209,
-    width: "40vw",
-    height: "55vh",
+    width: "100vw",
+    height: "40vh",
     zoom: 10
   });
 

@@ -11,16 +11,18 @@ AOS.init();
 const Projects = () => {
   const [show, setShow] = useState(false);
 
-  const igSlike = [
-    "http://hdwpro.com/wp-content/uploads/2016/11/Super-Building-Wallpaper.jpg",
-    "http://hdwpro.com/wp-content/uploads/2016/11/Super-Building-Wallpaper.jpg",
-    "http://hdwpro.com/wp-content/uploads/2016/11/Super-Building-Wallpaper.jpg",
-    "http://hdwpro.com/wp-content/uploads/2016/11/Super-Building-Wallpaper.jpg",
-    "http://hdwpro.com/wp-content/uploads/2016/11/Super-Building-Wallpaper.jpg",
-    "http://hdwpro.com/wp-content/uploads/2016/11/Super-Building-Wallpaper.jpg"
+  const headerUrl = "https://i.imgur.com/AmXnj97.png";
+  const urls1 = [
+    "https://cdn.trendir.com/wp-content/uploads/old/house-design/concrete-house-2.jpg",
+    "https://www.washingtonian.com/wp-content/uploads/2019/09/web_Exterior-back.jpg",
+    "https://assets.themodernhouse.com/wp-content/uploads/2017/04/02_20170405-DSC_8296-WEB-950x634.jpg"
   ];
-  const url =
-    "http://hdwpro.com/wp-content/uploads/2016/11/Super-Building-Wallpaper.jpg";
+  const urls2 = [
+    "https://maricamckeel.com/wp-content/uploads/2019/06/ChaletPerche_14-940x600.jpg",
+    "https://lh4.googleusercontent.com/proxy/Tx1ApHuhR7VoDaRK0vb3gB9v-DN_b0jgIIfua77B4LM7auq7ooktpQouf8o9DqtkI9jo4SZdVsKGTzFdYohorPCheT1SRDdzfE4xJs9RMA",
+    "https://www.concordprojects.com/wp-content/uploads/2019/06/DLittle-Photo-June-10-Streetview-2019-0059-2-e1561486943172.jpg"
+  ];
+
   return (
     <div>
       <Nav />
@@ -34,41 +36,33 @@ const Projects = () => {
             <h2>LATEST PROJECT</h2>
           </div>
         </div>
-        <img src={url} />
+        <img src={headerUrl} />
       </div>
       <div className="projects-flex">
         <div>
           <LatestPosts />
-          {/* <div className="ig-slike-container">
-            {igSlike.map(slike => (
-              <div className="ig-slike">
-                <img src={slike} />
-              </div>
-            ))}
-          </div> */}
         </div>
 
         <div>
-          <ProjectExample1 />
-          <ProjectExample1 />
-          <ProjectExample1 />
+          {urls1.map(url => (
+            <div>
+              <ProjectExample1 url={url} />
+            </div>
+          ))}
+
           <div className="projects-flex">
             {show ? (
               <div>
-                <div
-                  data-aos="fade-zoom-in"
-                  data-aos-easing="ease-in-back"
-                  data-aos-delay="0"
-                  data-aos-offset="0"
-                >
-                  <ProjectExample1 />
-                  <ProjectExample1 />
-                  <ProjectExample1 />
-                </div>
+                {urls2.map(url => (
+                  <ProjectExample1 url={url} />
+                ))}
               </div>
             ) : (
-              <div className="projects-btn">
-                <button onClick={() => setShow(true)}>MORE</button>
+              <div
+                onClick={() => setShow(true)}
+                className="projects-btn-container"
+              >
+                <div className="prjts-btn">MORE</div>
               </div>
             )}
           </div>

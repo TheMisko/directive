@@ -1,8 +1,9 @@
 import React from "react";
-
-const ProjectExample1 = () => {
-  const url =
-    "https://assets.themodernhouse.com/wp-content/uploads/2019/05/20190516-DSC_0845-WEB-1600x1068.jpg";
+import { Link } from "react-router-dom";
+const ProjectExample1 = ({ url }) => {
+  console.log(url);
+  // const url =
+  //   "https://assets.themodernhouse.com/wp-content/uploads/2019/05/20190516-DSC_0845-WEB-1600x1068.jpg";
   return (
     <div className="projects-container">
       <div className="projects-item">
@@ -18,7 +19,12 @@ const ProjectExample1 = () => {
             ever since the 1500s, when an unknown printer took a galley of type
             and scrambled it to make{" "}
           </p>
-          <h5>Read more</h5>
+          <Link
+            style={{ textDecoration: "none", color: "black" }}
+            to="/project"
+          >
+            <h5>Read more</h5>
+          </Link>
         </div>
       </div>
     </div>

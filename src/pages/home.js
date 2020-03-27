@@ -18,7 +18,6 @@ const Home = () => {
 
       <HomeSlider />
 
-      {/* <HomeSliderControls /> */}
       <div className="home-container">
         <HomeCards />
         <div className="line-container">

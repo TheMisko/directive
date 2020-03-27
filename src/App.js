@@ -8,6 +8,7 @@ import Projects from "./pages/projects";
 import Services from "./pages/services";
 import Contact from "./pages/contact";
 import Test from "./pages/test";
+import Project from "./pages/project";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route exact path="/services" component={Services} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/test" component={Test} />
+          <Route exact path="/project" component={Project} />
         </Switch>
       </HashRouter>
     </div>

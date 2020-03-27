@@ -10,9 +10,7 @@ const Nav = () => {
 
       <div className="nav-right">
         <Link style={{ textDecoration: "none" }} to="/">
-          <div>
-            <h3>HOME</h3>
-          </div>
+          <h3>HOME</h3>
         </Link>
         <Link style={{ textDecoration: "none" }} to="/about-us">
           <h3>ABOUT US</h3>

@@ -1,6 +1,8 @@
 import React from "react";
 
 const AboutUsInfo = () => {
+  const url =
+    "https://www.edisongroup.com/wp-content/uploads/2019/08/sean-pollock-PhYq704ffdA-unsplash-700x400.jpg";
   return (
     <div className="AU-info-container">
       <div className="AU-info-left">
@@ -13,7 +15,9 @@ const AboutUsInfo = () => {
           aliquip ex e
         </p>
       </div>
-      <div className="AU-info-right "></div>
+      <div className="AU-info-right ">
+        <img src={url} />
+      </div>
     </div>
   );
 };

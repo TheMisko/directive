@@ -8,10 +8,9 @@ import Footer from "../components/footer";
 import Prizes from "../components/prizes";
 
 const AboutUs = () => {
-  const url2 =
-    "https://previews.123rf.com/images/ultramansk/ultramansk1801/ultramansk180100146/94290636-perspective-exterior-pattern-blue-glass-wall-modern-buildings.jpg";
-  const url =
-    "http://hdwpro.com/wp-content/uploads/2016/11/Super-Building-Wallpaper.jpg";
+  const url = "https://i.imgur.com/AmXnj97.png";
+  const url2 = "https://i.imgur.com/EoUUCwt.png";
+
   return (
     <div>
       <Nav />
